@@ -12,17 +12,12 @@ teamArray = [
         </head>
 
     <body class="body" >
-        <h1> Team Cards </h1>
+        <h1 id="header"> Team Cards </h1>
         <!-- Team cards will go here-->
         <div id='teamHTML'>`,
         // the team cards will be appended here
 
         //intern HTML - card 1
-
-
-        
-        
-
 
             `<!-- Each team card -->
         </div>
@@ -76,11 +71,13 @@ const createEmployee = () => {
             .then((managerInfo) => {
                  // make html card
                     const internHTML = 
-                    `<h1>Manager</h1>
+                    `<div class="manager-card">
+                    <h1>Manager</h1>
                     <p>My name is ${managerInfo.managerName} </p>
                     <p>My ID number is ${managerInfo.managerID}</p>
                     <p>My email address is ${managerInfo.managerEmail}</p>
-                    <p> My phone number is ${managerInfo.managerPhone}</p>`
+                    <p> My phone number is ${managerInfo.managerPhone}</p>
+                    </div>`
 
                  // insert Intern HTML into team array
                      teamArray.splice(1, 0, internHTML)
@@ -117,11 +114,13 @@ const createEmployee = () => {
                 .then((internInfo) => {
                     // make html card
                   const internHTML = 
-                    `<h1>Intern</h1>
+                    `<div class="intern-card">
+                    <h1>Intern</h1>
                     <p>My name is ${internInfo.internName} </p>
                     <p>My ID number is ${internInfo.internID}</p>
                     <p>My email address is ${internInfo.internEmail}</p>
-                    <p>I attend ${internInfo.internSchool}</p>`
+                    <p>I attend ${internInfo.internSchool}</p>
+                    </div>`
 
                     // insert Intern HTML into team array
                     teamArray.splice(1, 0, internHTML)
@@ -156,11 +155,13 @@ const createEmployee = () => {
                  .then((engineerInfo) => {
                      // make html card
                    const internHTML = 
-                     `<h1>Engineer</h1>
+                     `<div class="engineer-card">
+                     <h1>Engineer</h1>
                      <p>My name is ${engineerInfo.engineerName} </p>
                      <p>My ID number is ${engineerInfo.engineerID}</p>
                      <p>My email address is ${engineerInfo.engineerEmail}</p>
-                     <p>I attend ${engineerInfo.engineerGithub}</p>`
+                     <p>I attend ${engineerInfo.engineerGithub}</p>
+                     </div>`
  
                      // insert Intern HTML into team array
                      teamArray.splice(1, 0, internHTML)

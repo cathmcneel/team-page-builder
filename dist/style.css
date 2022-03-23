@@ -1,16 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 5px;
     box-sizing: border-box;
 }
 
-.title {
-    padding: 20px 35px;
+#header {
+    justify-content: center;
+    border: 3px cornflowerblue solid;
     background-color: lightblue;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
+    text-align: center;
 }
 
+#teamHTML {
+    justify-content: center;
+    text-align: center;
+}
+
+.engineer-card {
+    border: 5px cornflowerblue solid;
+    margin: 3px;
+
+}
+
+.intern-card {
+    border: 5px cornflowerblue solid;
+    margin: 3px;
+   
+}
+
+.manager-card {
+    border: 5px cornflowerblue solid;
+    margin: 3px;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
