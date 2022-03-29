@@ -10,4 +10,4 @@
 
 ### to use the application, enter node index into the command line
 
-### demo video available here
+### [Link to Video Walkthrough](dist/demo_video.mp4)
